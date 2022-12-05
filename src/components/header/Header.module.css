@@ -1,0 +1,44 @@
+.container {
+  padding: 1.5em;
+  display: flex;
+  margin-inline: 2em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo > img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.logo > span {
+  font-weight: 600;
+}
+
+.right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.menu > li:hover {
+  color: #de0082;
+  cursor: pointer;
+}
+
+.cart {
+  width: 2em;
+  height: 2em;
+}
