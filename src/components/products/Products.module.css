@@ -1,0 +1,45 @@
+.container {
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.container > :nth-child(1) {
+  position: absolute;
+  width: 8rem;
+  left: 30%;
+  top: 1rem;
+}
+.products {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 100% auto;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  height: 25rem;
+  grid-gap: 2rem;
+  justify-content: space-between;
+}
+
+.product {
+  width: 12rem;
+  height: 8rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  border-radius: 10px;
+}
+
+.product > img {
+  top: 3rem;
+  width: 6rem;
+  height: 11rem;
+}
