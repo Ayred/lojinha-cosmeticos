@@ -1,4 +1,4 @@
-import { CgShoppingBag } from 'react-icons/cg';
+import { HiOutlineShoppingCart } from 'react-icons/hi';
 import logo from '../../assets/logo.png';
 import css from './Header.module.css';
 
@@ -32,7 +32,7 @@ const Header = ({
         <div>
           <div onClick={openModal} className={css.iconBadgeContainer}>
             
-            <CgShoppingBag className={`${css.cart} ${css.iconBadgeIcon}`}/>
+            <HiOutlineShoppingCart className={`${css.cart} ${css.iconBadgeIcon}`}/>
             
             {cart.length > 0 && (<div className={css.iconBadge}>{cart.length}</div>)}
           </div>        

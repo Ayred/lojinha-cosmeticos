@@ -21,7 +21,14 @@ function App() {
         isOpenModal={isOpenModal}
         setIsOpenModal={setIsOpenModal}
       />
-      {isOpenModal && <Modal isOpen={isOpenModal} closeModal={closeModal} />}
+      {isOpenModal && (
+        <Modal
+          isOpen={isOpenModal}
+          closeModal={closeModal}
+          cart={cart}
+          setCart={setCart}
+        />
+      )}
       <Slider />
       <Products cart={cart} setCart={setCart} />
     </div>
