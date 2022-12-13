@@ -1,8 +1,6 @@
-import React from 'react';
 import { CgShoppingBag } from 'react-icons/cg';
 import logo from '../../assets/logo.png';
 import css from './Header.module.css';
-
 
 const Header = ({
   cart,
@@ -10,6 +8,11 @@ const Header = ({
   isOpenModal,
   setIsOpenModal
 }) => {
+
+  const openModal = () => {
+    setIsOpenModal(true);
+  };
+
   return (
     <div className={css.container}>
       <div className={css.logo}>
@@ -27,7 +30,8 @@ const Header = ({
           </ul>
         </div>
         <div>
-          <div className={css.iconBadgeContainer}>
+          <div onClick={openModal} className={css.iconBadgeContainer}>
+            
             <CgShoppingBag className={`${css.cart} ${css.iconBadgeIcon}`}/>
             
             {cart.length > 0 && (<div className={css.iconBadge}>{cart.length}</div>)}

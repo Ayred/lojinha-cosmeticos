@@ -1,0 +1,8 @@
+.modal {
+  background-color: tomato;
+  display: none;
+}
+
+.modalOpen {
+  display: flex;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/header/Header.jsx';
+import Modal from './components/modal/Modal';
 import Products from './components/products/Products';
 import Slider from './components/slider/Slider';
 
@@ -8,22 +9,19 @@ function App() {
   const [cart, setCart] = useState(
     JSON.parse(localStorage.getItem('cart')) || []
   );
-  // const [isOpenModal, setIsOpenModal] = !useState;
-  // const openModal = () => {
-  //   setIsOpenModal(true);
-  // };
-
+  const [isOpenModal, setIsOpenModal] = useState(true);
+  const closeModal = () => {
+    setIsOpenModal(false);
+  };
   return (
     <div className="App">
-      {/* //   <div>
-    //     <button onClick={openModal}></button>
-    //   </div> */}
       <Header
         cart={cart}
         setCart={setCart}
-        // isOpenModal={isOpenModal}
-        // setIsOpenModal={setIsOpenModal}
+        isOpenModal={isOpenModal}
+        setIsOpenModal={setIsOpenModal}
       />
+      {isOpenModal && <Modal isOpen={isOpenModal} closeModal={closeModal} />}
       <Slider />
       <Products cart={cart} setCart={setCart} />
     </div>
