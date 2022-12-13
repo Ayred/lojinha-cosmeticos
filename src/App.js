@@ -9,7 +9,7 @@ function App() {
   const [cart, setCart] = useState(
     JSON.parse(localStorage.getItem('cart')) || []
   );
-  const [isOpenModal, setIsOpenModal] = useState(true);
+  const [isOpenModal, setIsOpenModal] = useState(false);
   const closeModal = () => {
     setIsOpenModal(false);
   };
