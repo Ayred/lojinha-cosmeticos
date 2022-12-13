@@ -1,9 +1,15 @@
-import React from 'react'
-import { CgShoppingBag } from 'react-icons/cg'
-import logo from '../../assets/logo.png'
-import css from './Header.module.css'
+import React from 'react';
+import { CgShoppingBag } from 'react-icons/cg';
+import logo from '../../assets/logo.png';
+import css from './Header.module.css';
 
-const header = () => {
+
+const Header = ({
+  cart,
+  setCart,
+  isOpenModal,
+  setIsOpenModal
+}) => {
   return (
     <div className={css.container}>
       <div className={css.logo}>
@@ -20,11 +26,16 @@ const header = () => {
             <li>PT-BR</li>
           </ul>
         </div>
-     
-        <CgShoppingBag className={css.cart}/>
+        <div>
+          <div className={css.iconBadgeContainer}>
+            <CgShoppingBag className={`${css.cart} ${css.iconBadgeIcon}`}/>
+            
+            {cart.length > 0 && (<div className={css.iconBadge}>{cart.length}</div>)}
+          </div>        
+        </div>
       </div>
     </div>
   )
 }
 
-export default header
+export default Header
