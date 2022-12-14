@@ -39,15 +39,20 @@
 }
 
 .product > img {
-  top: 3rem;
+  top: 30%;
   width: 5rem;
   height: 8rem;
 }
 
 .btn {
   border: none;
-  background-color: rgb(242, 75, 225);
-  color: rgb(4, 4, 4);
+  background-color: #d64e9e;
+  color: white;
+  font-weight: bolder;
   cursor: pointer;
   min-width: 80px;
+}
+
+.btn:hover {
+  background-color: #d77db2;
 }

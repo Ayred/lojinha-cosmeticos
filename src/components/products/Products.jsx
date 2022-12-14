@@ -36,7 +36,7 @@ const Products = ({ cart, setCart, formatNumber }) => {
                   className={css.btn}
                   onClick={() => onAddProduct(product)}
                 >
-                  comprar
+                  Comprar
                 </button>
               </div>
               <img src={product.img} alt="" className="img-p" />

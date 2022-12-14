@@ -64,3 +64,9 @@
   top: -5px;
   left: 18px;
 }
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+  }
+}
