@@ -21,6 +21,12 @@ const Modal = ({ isOpen, closeModal, cart, setCart, formatNumber }) => {
     );
     setCart(JSON.parse(localStorage.getItem('cart')));
   };
+  const total = () =>
+    cart.reduce(
+      (accumulator, item) => item.quantity * item.price + accumulator,
+      0
+    );
+
   return (
     <div
       className={`${css.modal} ${isOpen ? css.modalOpen : ''}`}
@@ -32,6 +38,7 @@ const Modal = ({ isOpen, closeModal, cart, setCart, formatNumber }) => {
         </button>
         <h1>Meu carrinho</h1>
         <div>
+          {cart.length === 0 && <h5>Seu carrinho está vazio!</h5>}
           {cart.map((product) => (
             <div className={css.product} key={product.id}>
               <img src={product.img} alt="" />
@@ -42,11 +49,7 @@ const Modal = ({ isOpen, closeModal, cart, setCart, formatNumber }) => {
                 <span>Unidade {formatNumber(product.price)}</span>
                 <span> x {product.quantity}</span>
                 <div className="name">
-                  <span>
-                    {formatNumber(
-                      Number(product.quantity) * Number(product.price)
-                    )}
-                  </span>
+                  <span>{formatNumber(product.quantity * product.price)}</span>
                 </div>
               </div>
               <div className={css.quantity}>
@@ -66,6 +69,12 @@ const Modal = ({ isOpen, closeModal, cart, setCart, formatNumber }) => {
               </div>
             </div>
           ))}
+          {cart.length > 0 && (
+            <div className={css.totalAndPay}>
+              <span>Total: {formatNumber(total())}</span>
+              <button>Pagar</button>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -115,3 +115,26 @@
   border: none;
   border-radius: 15%;
 }
+.totalAndPay {
+  display: flex;
+  height: 10%;
+  margin-top: 2%;
+}
+
+.totalAndPay :nth-child(1) {
+  position: relative;
+  left: 35%;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.totalAndPay :nth-child(2) {
+  position: relative;
+  left: 45%;
+  background-color: #cc338c;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  font-weight: bolder;
+  padding-inline: 5%;
+}
