@@ -26,6 +26,14 @@ const Modal = ({ isOpen, closeModal, cart, setCart, formatNumber }) => {
       (accumulator, item) => item.quantity * item.price + accumulator,
       0
     );
+  const pay = (e) => {
+    emptyCart();
+    closeModal();
+  };
+  const emptyCart = () => {
+    localStorage.setItem('cart', JSON.stringify([]));
+    setCart(JSON.parse(localStorage.getItem('cart')));
+  };
 
   return (
     <div
@@ -72,7 +80,9 @@ const Modal = ({ isOpen, closeModal, cart, setCart, formatNumber }) => {
           {cart.length > 0 && (
             <div className={css.totalAndPay}>
               <span>Total: {formatNumber(total())}</span>
-              <button>Pagar</button>
+              <button onClick={pay} className={css.payButton}>
+                Pagar
+              </button>
             </div>
           )}
         </div>

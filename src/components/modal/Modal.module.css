@@ -128,13 +128,17 @@
   font-size: larger;
 }
 
-.totalAndPay :nth-child(2) {
+.payButton {
   position: relative;
   left: 45%;
-  background-color: #cc338c;
+  background-color: #d64e9e;
   color: white;
   border: none;
   border-radius: 10%;
   font-weight: bolder;
   padding-inline: 5%;
+}
+
+.payButton:hover {
+  background-color: #d77db2;
 }
