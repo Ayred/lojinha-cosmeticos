@@ -13,6 +13,12 @@ function App() {
   const closeModal = () => {
     setIsOpenModal(false);
   };
+  const formatNumber = (number) => {
+    return new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
+    }).format(number);
+  };
   return (
     <div className="App">
       <Header
@@ -27,10 +33,11 @@ function App() {
           closeModal={closeModal}
           cart={cart}
           setCart={setCart}
+          formatNumber={formatNumber}
         />
       )}
       <Slider />
-      <Products cart={cart} setCart={setCart} />
+      <Products cart={cart} setCart={setCart} formatNumber={formatNumber} />
     </div>
   );
 }

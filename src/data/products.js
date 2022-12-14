@@ -41,7 +41,7 @@ export const ProductsData = [
     id: 4,
     name: 'TÔNICO',
     description: 'Tônico Hidratante',
-    price: '24,99',
+    price: 24.99,
     img: img1,
     type: 'cuidado da pele'
   },
@@ -49,7 +49,7 @@ export const ProductsData = [
     id: 5,
     name: 'TÔNICO',
     description: 'Tônico Revitalizante',
-    price: '29,99',
+    price: 29.99,
     img: img2,
     type: 'cuidado da pele'
   },
@@ -57,7 +57,7 @@ export const ProductsData = [
     id: 6,
     name: 'TÔNICO',
     description: 'Tônico limpador',
-    price: '24,99',
+    price: 24.99,
     img: img3,
     type: 'cuidado da pele'
   },
@@ -65,7 +65,7 @@ export const ProductsData = [
     id: 7,
     name: 'BASE',
     description: 'Compostos Anti-aging',
-    price: '24,99',
+    price: 24.99,
     img: img4,
     type: 'base'
   },
@@ -73,7 +73,7 @@ export const ProductsData = [
     id: 8,
     name: 'CONDICIONADOR',
     description: 'Hidratante para o cabelo',
-    price: '29,99',
+    price: 29.99,
     img: img5,
     type: 'condicionador'
   },
@@ -81,7 +81,7 @@ export const ProductsData = [
     id: 9,
     name: 'TÔNICO',
     description: 'Tônico para hidratar',
-    price: '24,99',
+    price: 24.99,
     img: img6,
     type: 'cuidado da pele'
   },
@@ -89,7 +89,7 @@ export const ProductsData = [
     id: 10,
     name: 'CONDICIONADOR',
     details: 'Reestruturação Capilar',
-    price: '29,99',
+    price: 29.99,
     img: img7,
     type: 'condicionador'
   },
@@ -97,7 +97,7 @@ export const ProductsData = [
     id: 11,
     name: 'CONDICIONADOR',
     details: 'Proteínas Reparadoras',
-    price: '29,99',
+    price: 29.99,
     img: img8,
     type: 'condicionador'
   },
@@ -105,7 +105,7 @@ export const ProductsData = [
     id: 12,
     name: 'CONDICIONADOR',
     details: 'Óleos umectantes',
-    price: '29,99',
+    price: 29.99,
     img: img9,
     type: 'condicionador'
   },
@@ -113,7 +113,7 @@ export const ProductsData = [
     id: 13,
     name: 'CONDICIONADOR',
     details: 'Hidratação Profunda',
-    price: '29,99',
+    price: 29.99,
     img: img10,
     type: 'condicionador'
   },
@@ -121,7 +121,7 @@ export const ProductsData = [
     id: 14,
     name: 'BASE',
     details: 'Peles Sensíveis',
-    price: '11,99',
+    price: 11.99,
     img: img11,
     type: 'base'
   },
@@ -129,7 +129,7 @@ export const ProductsData = [
     id: 15,
     name: 'BASE',
     details: 'Peles Oleosas',
-    price: '11,99',
+    price: 11.99,
     img: img12,
     type: 'base'
   },
@@ -137,7 +137,7 @@ export const ProductsData = [
     id: 16,
     name: 'BASE',
     details: 'Efeiro Radiante',
-    price: '11,99',
+    price: 11.99,
     img: img13,
     type: 'base'
   },
@@ -145,7 +145,7 @@ export const ProductsData = [
     id: 17,
     name: 'BASE',
     details: 'Nutre tua pele',
-    price: '11,99',
+    price: 11.99,
     img: img14,
     type: 'base'
   }

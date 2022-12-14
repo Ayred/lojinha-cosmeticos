@@ -62,7 +62,7 @@
 
 .product {
   width: 94%;
-  height: 4rem;
+  height: 6rem;
   background-color: white;
   position: relative;
   overflow: hidden;
@@ -70,6 +70,8 @@
   display: flex;
   border-radius: 10px;
   margin-top: 1%;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
@@ -81,5 +83,35 @@
 }
 
 .right {
-  background-color: ffff;
+  background-color: white;
+  margin-inline: 1%;
+}
+
+.product > img {
+  top: 3rem;
+  width: 12%;
+  height: 100%;
+  margin-right: 2%;
+}
+
+.quantity {
+  position: relative;
+  margin-left: 6%;
+}
+
+.quantity :nth-child(1) {
+  position: relative;
+  top: 40%;
+  border: none;
+  border-radius: 15%;
+}
+.quantity :nth-child(2) {
+  position: relative;
+  top: 40%;
+}
+.quantity :nth-child(3) {
+  position: relative;
+  top: 40%;
+  border: none;
+  border-radius: 15%;
 }
