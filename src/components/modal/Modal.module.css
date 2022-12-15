@@ -39,27 +39,6 @@
   color: black;
 }
 
-.container {
-  padding: 0 2rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-}
-.container > :nth-child(1) {
-  position: absolute;
-  width: 8rem;
-  left: 30%;
-  top: 1rem;
-}
-.products {
-  display: grid;
-  width: 89%;
-  grid-template-columns: 100% auto;
-}
-
 .product {
   width: 94%;
   height: 6rem;
@@ -85,6 +64,7 @@
 .right {
   background-color: white;
   margin-inline: 1%;
+  width: 100px;
 }
 
 .product > img {
@@ -97,6 +77,8 @@
 .quantity {
   position: relative;
   margin-left: 6%;
+  width: 70px;
+  text-align: center;
 }
 
 .quantity :nth-child(1) {
@@ -141,4 +123,35 @@
 
 .payButton:hover {
   background-color: #d77db2;
+}
+
+.trashIcon {
+  color: #d64e9e;
+}
+.trashIcon:hover {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .totalAndPay :nth-child(1) {
+    position: relative;
+    left: 25%;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .payButton {
+    position: relative;
+    left: 30%;
+    background-color: #d64e9e;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    font-weight: bolder;
+    padding-inline: 5%;
+  }
+
+  .payButton:hover {
+    background-color: #d77db2;
+  }
 }

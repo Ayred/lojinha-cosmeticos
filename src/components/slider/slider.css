@@ -4,7 +4,6 @@
 
 .s-container .swiper {
   width: 70%;
-  height: 12rem;
   position: unset;
 }
 
@@ -17,11 +16,6 @@
   overflow: hidden;
   position: relative;
 }
-
-/* .s-container .swiper-button-prev,
-.s-container .swiper-button-next {
-  color: black;
-} */
 
 .left-s {
   display: flex;
@@ -61,7 +55,29 @@
   transform: rotate(-20deg);
   position: absolute;
   right: 0;
-  width: 40%;
-  height: 100%;
+  width: 30%;
+  height: 10rem;
   bottom: -20%;
+  top: 3rem;
+  margin-right: 2%;
+}
+
+@media screen and (max-width: 900px) {
+  .s-container .swiper {
+    width: 320%;
+    height: 30%;
+    display: grid;
+  }
+
+  .s-container .swiper-slide {
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .s-container .swiper-button-prev,
+  .s-container .swiper-button-next {
+    display: none;
+  }
 }

@@ -44,7 +44,6 @@
 }
 
 .iconBadgeContainer {
-  margin-top: 20px;
   position: relative;
 }
 
@@ -63,4 +62,14 @@
   position: absolute;
   top: -5px;
   left: 18px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+  }
+  .iconBadgeContainer {
+    position: sticky;
+    margin-right: 30px;
+  }
 }

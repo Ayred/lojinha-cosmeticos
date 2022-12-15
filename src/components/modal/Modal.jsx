@@ -73,7 +73,10 @@ const Modal = ({ isOpen, closeModal, cart, setCart, formatNumber }) => {
                 </button>
               </div>
               <div className={css.quantity}>
-                <HiOutlineTrash onClick={(e) => deleteProduct(e, product.id)} />
+                <HiOutlineTrash
+                  className={css.trashIcon}
+                  onClick={(e) => deleteProduct(e, product.id)}
+                />
               </div>
             </div>
           ))}
