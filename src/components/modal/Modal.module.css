@@ -156,3 +156,9 @@
     background-color: #d77db2;
   }
 }
+
+@media (max-width: 300px) {
+  .totalAndPay {
+    display: inline-block;
+  }
+}
